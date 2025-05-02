@@ -1,0 +1,13 @@
+#!name=Spotify Crack (iOS 15)
+
+#!desc=Crack Spotify Premium Danh Cho He Dieu Hanh IOS
+
+# 1. Giao dien tim kiem Danh sach phat/bai hat co the duoc chuyen doi va phat theo y muon 2. Cac bai hat trong thu vien nhac da duoc thich co the duoc chuyen doi va phat theo y muon
+
+
+[MITM]
+hostname = %APPEND% spclient.wg.spotify.com
+
+[Script]
+spotify-json = type=http-request,type=http-request,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,script-path=https://raw.githubusercontent.com/trickerchannel/shadowrocket/refs/heads/main/spotify-json.js
+spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/trickerchannel/shadowrocket/refs/heads/main/spotify-proto.js,script-update-interval=0
