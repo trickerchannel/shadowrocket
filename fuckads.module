@@ -3,7 +3,7 @@
 #!icon=https://i.pinimg.com/736x/62/8e/7a/628e7a7b1b1bbf4e7bea574a3b194a8e.jpg
 #!homepage=https://hoanit.id.vn/
 #!author=Hoan IT
-# 由whatshub.top自动维护 202509
+
 [URL Rewrite]
 ^https?:\/\/2025.08.27/c393/v2.0.615 reject-200
 ^https?:\/\/ftapi\.10jqka\.com\.cn\/futgwapi\/api\/om\/v\d\/ad\/common\/transfer reject-200
