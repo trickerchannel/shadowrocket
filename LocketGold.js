@@ -67,5 +67,3 @@ console.log("Final Modified Response:", JSON.stringify(obj, null, 2));
 
 // ========= Trả kết quả cuối cùng ========= //
 $done({ body: JSON.stringify(obj) });
-
-// ========= Xunn ========= //
